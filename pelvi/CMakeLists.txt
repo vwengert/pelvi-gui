@@ -12,8 +12,10 @@ find_package(Qt6 6.8 REQUIRED COMPONENTS
 qt6_add_library(pelvi SHARED
         src/database.cpp
         src/pelvi.cpp
+        src/dbinit.cpp
         include/database.h
         include/pelvi.h
+        include/dbinit.h
 )
 
 target_include_directories(pelvi PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
